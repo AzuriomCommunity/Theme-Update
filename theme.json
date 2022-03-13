@@ -1,0 +1,12 @@
+{
+    "id": "update",
+    "name": "Update",
+    "description": "Dark modern theme for Azuriom.",
+    "version": "1.2.0",
+    "url": "https://market.azuriom.com/resources/45",
+    "authors": [
+        "Rqmain"
+    ],
+    "azuriom_api": "1.0.0",
+    "apiId": 45
+}

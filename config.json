@@ -1,0 +1,36 @@
+{
+    "maintenance": "12/20/2022",
+    "color": "aqua",
+    "youtube_link": "tPcPHeIMBbg",
+    "description_site": "Azuriom is a modern, reliable, fast and secure game CMS.",
+    "texte_section_1": "Title 1",
+    "icon_1": "server",
+    "icon_2": "trophy",
+    "icon_3": "gamepad",
+    "titre_1": "Servers",
+    "titre_2": "Competition",
+    "titre_3": "Gameplay",
+    "texte_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "texte_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    "texte_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    "texte_section_2": "Title 2",
+    "btn_section_2_url": "#",
+    "btn_section_2": "Button text",
+    "image_section_2": "https://via.placeholder.com/600x600?text=Image",
+    "footer_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, justo sit amet sagittis fermentum, est purus vestibulum risus, vel lacinia libero ligula non erat. Aenean viverra nisi leo. Pellentesque porttitor et tortor facilisis porttitor. Vestibulum convallis, urna eget gravida malesuada, orci risus lobortis lectus, at tincidunt lectus massa in diam.",
+    "footer_article": "Vestibulum convallis, urna eget gravida malesuada, orci risus lobortis lectus, at lectus massa in diam.",
+    "footer_links": [
+        {
+            "name": "Link 1",
+            "value": null
+        },
+        {
+            "name": "Link 2",
+            "value": null
+        },
+        {
+            "name": "Link 3",
+            "value": null
+        }
+    ]
+}
