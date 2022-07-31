@@ -6,7 +6,7 @@
             <h6>&nbsp;|&nbsp;</h6>
             @if($server->joinUrl())
                 <a href="{{ $server->joinUrl() }}" class="btn btn-primary">
-                    {{ trans('theme::update.play') }}
+                    {{ trans('messages.server.join') }}
                 </a>
             @else
                 <span title="{{ trans('messages.actions.copy') }}" class="copy-address"
@@ -64,7 +64,7 @@
                 <p class="mb-0">{{ setting('copyright') }}</p>
             </div>
             <div class="col-md-6 text-end">
-                <p class="mb-0">{{ trans('theme::update.footer.azuriom_copyright') }} <a href="https://azuriom.com/" target="_blank">Azuriom</a> - {{ trans('theme::update.footer.rqmain_copyright') }} <a href="https://azuriom.com/market/resources/45" target="_blank">Rqmain</a>.</p>
+                <p class="mb-0">@lang('messages.copyright')</p>
             </div>
         </div>
     </div>

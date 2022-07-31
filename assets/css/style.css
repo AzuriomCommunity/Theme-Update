@@ -5,11 +5,9 @@ body, html {
 body {
     display: flex;
     flex-direction: column;
-    font-family: poppins, sans-serif;
     color: #fff;
     background: #141928;
     scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased
 }
 
 ::-webkit-scrollbar {
@@ -150,6 +148,7 @@ img {
 }
 
 .home-section-information .element {
+    height: 100%;
     padding: 3rem;
     text-align: center;
     background: rgba(0, 0, 0, .2);
