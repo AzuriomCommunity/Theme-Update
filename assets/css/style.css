@@ -20,7 +20,8 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    height: 10px
+    height: 10px;
+    background: #000
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -28,7 +29,8 @@ body {
 }
 
 ::selection {
-    color: #f1f1f1
+    color: #f1f1f1;
+    background-color: #000;
 }
 
 a {
@@ -55,12 +57,17 @@ img {
 
 .card, .list-group-item, .accordion-item, .accordion-button {
     color: #fff;
-    background: rgba(0, 0, 0, .35);
+    background-color: rgba(0, 0, 0, .45);
     border-radius: 0
 }
 
-.card-header, .accordion-button:not(.collapsed) {
+.card-header {
+    color: #fff;
     background-color: rgba(0, 0, 0, .25)
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0a0c10;
 }
 
 .card-body {
@@ -221,6 +228,10 @@ img {
     outline: 0
 }
 
+.btn-primary, .form-check-input {
+    background-color: #0c0f18 !important
+}
+
 .btn-jouer {
     background-color: #fff;
     font-weight: 500;
@@ -344,7 +355,7 @@ footer h3 {
     background-color: rgba(0, 0, 0, .3)
 }
 
-.form-select:focus, .form-control:focus {
+.form-select:focus, .form-control:focus,.accordion-item {
     color: #fff;
     background: rgba(0, 0, 0, .3)
 }
@@ -354,8 +365,12 @@ footer h3 {
     border-radius: 0
 }
 
-.form-check-input:focus ~ .form-check-label::before, .form-control:focus {
-    box-shadow: none
+.form-check-input:checked {
+    color: #0c0f18!important;
+}
+
+.form-switch .form-check-input {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 0.75%29'/%3e%3c/svg%3e");
 }
 
 .input-group-text {
@@ -391,10 +406,6 @@ hr {
 
 .editor-toolbar {
     background: rgba(0, 0, 0, .3) !important
-}
-
-.editor-toolbar .fa {
-    color: #fff
 }
 
 .editor-toolbar.fullscreen::after, .editor-toolbar.fullscreen::before {

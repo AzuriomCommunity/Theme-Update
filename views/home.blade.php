@@ -3,7 +3,7 @@
 @section('title', trans('messages.home'))
 
 @push('scripts')
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="{{ theme_asset('js/particles.min.js') }}" defer></script>
     <script src="{{ theme_asset('js/fire.js') }}" defer></script>
 @endpush
 
@@ -126,7 +126,7 @@
             @endif
 
             <a href="{{ route('posts.index') }}" class="btn btn-primary btn-lg">
-                <i class="bi bi-newspaper"></i> {{ trans('messages.posts.posts') }}
+                <i class="bi bi-newspaper"></i> {{ trans('messages.news') }}
             </a>
         </div>
 
