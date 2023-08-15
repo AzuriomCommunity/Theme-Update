@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('app')
-    <header>
+    <header class="container-fluid">
         @include('elements.navbar')
     </header>
 

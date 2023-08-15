@@ -1,11 +1,9 @@
 <?php
 
-use Illuminate\Validation\Rule;
-
-$colors = ['red', 'blue', 'green', 'purple', 'orange', 'yellow', 'aqua', 'pink'];
+use Azuriom\Rules\Color;
 
 return [
-    'color' => ['required', Rule::in($colors)],
+    'color' => ['required', new Color()],
     'youtube_link' => 'nullable|string',
     'description_site' => 'required|string',
     'texte_section_1' => 'nullable|string',

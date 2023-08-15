@@ -8,31 +8,31 @@
 @endpush
 
 @section('app')
-    <div class="background-overlay mb-5" style="background: url('{{ setting('background') ? image_url(setting('background')) : 'https://via.placeholder.com/2000x500' }}') no-repeat center / cover">
+    <div class="home-background mb-5" style="background: url('{{ setting('background') ? image_url(setting('background')) : 'https://via.placeholder.com/2000x500' }}') no-repeat center / cover">
         <div id="particles-js"></div>
 
         <div>
-            <header>
+            <header class="container-fluid">
                 @include('elements.navbar')
             </header>
 
             <div class="container text-center">
                 <div class="row justify-content-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-5">
                         <img src="{{ site_logo() }}" alt="{{ site_name() }}" data-tilt data-tilt-scale="1.2" width="250">
                     </div>
                 </div>
-                <div class="home-content pb-4">
-                    <h1>{{ site_name() }}</h1>
-                    <h6 class="mb-3">{{ theme_config('description_site') }}</h6>
+                <div class="position-relative text-light z-2 pt-2 pb-4">
+                    <h1 class="display-1 fw-semibold">{{ site_name() }}</h1>
+                    <p>{{ theme_config('description_site') }}</p>
 
-                    <div class="list-inline">
+                    <div class="list-inline home-links">
                         @foreach(social_links() as $link)
-                            <a href="{{ $link->value }}" target="_blank" rel="noreferrer noopener" title="{{ $link->title }}">
-                                <div class="list-inline-item">
+                            <div class="list-inline-item mx-3">
+                                <a href="{{ $link->value }}" target="_blank" rel="noreferrer noopener" title="{{ $link->title }}" class="home-link link-body-emphasis">
                                     <i class="{{ $link->icon }} fs-3 m-2"></i>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         @endforeach
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                 @if(theme_config('titre_1'))
                     <div class="col-md-4">
                         <div class="element">
-                            <i class="{{ theme_config('icon_1') }}"></i>
+                            <i class="{{ theme_config('icon_1') }} text-primary"></i>
                             <h3>{{ theme_config('titre_1') }}</h3>
                             <p>{{ theme_config('texte_1') }}</p>
                         </div>
@@ -58,7 +58,7 @@
                 @if(theme_config('titre_2'))
                     <div class="col-md-4">
                         <div class="element">
-                            <i class="{{ theme_config('icon_2') }}"></i>
+                            <i class="{{ theme_config('icon_2') }} text-primary"></i>
                             <h3>{{ theme_config('titre_2') }}</h3>
                             <p>{{ theme_config('texte_2') }}</p>
                         </div>
@@ -67,7 +67,7 @@
                 @if(theme_config('titre_3'))
                     <div class="col-md-4">
                         <div class="element">
-                            <i class="{{ theme_config('icon_3') }}"></i>
+                            <i class="{{ theme_config('icon_3') }} text-primary"></i>
                             <h3>{{ theme_config('titre_3') }}</h3>
                             <p>{{ theme_config('texte_3') }}</p>
                         </div>

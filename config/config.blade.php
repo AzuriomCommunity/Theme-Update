@@ -2,6 +2,8 @@
 
 @section('footer_description', 'Theme config')
 
+@include('admin.elements.color-picker')
+
 @push('footer-scripts')
     <script>
         function addLinkListener(el) {
@@ -56,14 +58,8 @@
             </div>
             <div class="card-body">
                 <div class="mb-3">
-                    <label class="form-label" for="colorSelect">{{ trans('messages.fields.color') }}</label>
-                    <select class="form-select @error('color') is-invalid @enderror" id="colorSelect" name="color">
-                        @foreach(['red', 'blue', 'green', 'purple', 'orange', 'yellow', 'aqua', 'pink'] as $color)
-                            <option value="{{ $color }}" @selected(theme_config('color') === $color)>
-                                {{ trans('theme::update.colors.'.$color) }}
-                            </option>
-                        @endforeach
-                    </select>
+                    <label class="form-label" for="colorInput">{{ trans('messages.fields.color') }}</label>
+                    <input type="color" class="form-control form-control-color color-picker @error('color') is-invalid @enderror" id="colorInput" name="color" value="{{ old('color', theme_config('color', '#c0392b')) }}" required>
 
                     @error('color')
                     <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>

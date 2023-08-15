@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark">
+<nav class="navbar navbar-expand-md py-4">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -77,7 +77,7 @@
             @if($server)
                 <li class="nav-item">
                     @if($server->joinUrl())
-                        <a href="{{ $server->joinUrl() }}" class="nav-link">
+                        <a href="{{ $server->joinUrl() }}" target="_blank" rel="noreferrer noopener" class="nav-link">
                             {{ trans('messages.server.join') }}
                         </a>
                     @else
