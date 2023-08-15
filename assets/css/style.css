@@ -36,7 +36,7 @@ h1 {
 
 .content {
     margin-top: 5rem;
-    margin-bottom: 5rem
+    margin-bottom: 5rem;
 }
 
 .navbar .nav-item {
@@ -60,7 +60,8 @@ h1 {
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0
+    right: 0;
+    background: linear-gradient(0, var(--bs-body-bg), rgba(0, 0, 0, 0.15) 80%);
 }
 
 .home-links .home-link {
@@ -69,12 +70,12 @@ h1 {
     border-radius: 50%;
     display: inline-block;
     font-size: 12px;
-    transition: .3s
+    transition: .3s;
 }
 
 .home-links .home-link:hover {
     transform: scale(1.15);
-    border: 1px solid rgba(255, 255, 255, .8)
+    border: 1px solid rgba(255, 255, 255, .8);
 }
 
 .home-section-information .element {
@@ -86,7 +87,7 @@ h1 {
 }
 
 .home-section-information .element i {
-    font-size: 3rem
+    font-size: 3rem;
 }
 
 .home-section-information .element h3 {

@@ -22,7 +22,7 @@
                         <img src="{{ site_logo() }}" alt="{{ site_name() }}" data-tilt data-tilt-scale="1.2" width="250">
                     </div>
                 </div>
-                <div class="position-relative text-light z-2 pt-2 pb-4">
+                <div class="position-relative text-light z-2 pt-2 pb-5">
                     <h1 class="display-1 fw-semibold">{{ site_name() }}</h1>
                     <p>{{ theme_config('description_site') }}</p>
 
