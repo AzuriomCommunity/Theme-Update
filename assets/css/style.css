@@ -64,6 +64,10 @@ h1 {
     background: linear-gradient(0, var(--bs-body-bg), rgba(0, 0, 0, 0.15) 80%);
 }
 
+.home-background .container {
+    min-height: calc(100vh - 100px);
+}
+
 .home-links .home-link {
     background: rgba(255, 255, 255, .1);
     border: 1px solid rgba(255, 255, 255, .2);

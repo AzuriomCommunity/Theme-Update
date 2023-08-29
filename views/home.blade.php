@@ -16,13 +16,9 @@
                 @include('elements.navbar')
             </header>
 
-            <div class="container text-center">
-                <div class="row justify-content-center">
-                    <div class="col-md-4 mt-5">
-                        <img src="{{ site_logo() }}" alt="{{ site_name() }}" data-tilt data-tilt-scale="1.2" width="250">
-                    </div>
-                </div>
-                <div class="position-relative text-light z-2 pt-2 pb-5">
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+                <img src="{{ site_logo() }}" alt="{{ site_name() }}" class="mt-5" data-tilt data-tilt-scale="1.2" width="250">
+                <div class="position-relative text-center text-light z-2 pt-2 pb-5">
                     <h1 class="display-1 fw-semibold">{{ site_name() }}</h1>
                     <p>{{ theme_config('description_site') }}</p>
 
